@@ -11,11 +11,11 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # Add source files to a library target
-add_library(other-1-lib src/one-way-list-node.cpp src/one-way-list.cpp src/one-way-list-node.h src/one-way-list.h)
+add_library(1-queues-lib src/table-queue.cpp src/table-queue.h)
 
 # Add the executable target and link to the library
-add_executable(other-1 src/main.cpp)
-target_link_libraries(other-1 other-1-lib)
+add_executable(1-queues src/main.cpp)
+target_link_libraries(1-queues 1-queues-lib)
 
 # Set include directories for the library target
-target_include_directories(other-1-lib PUBLIC src)
+target_include_directories(1-queues-lib PUBLIC src)
