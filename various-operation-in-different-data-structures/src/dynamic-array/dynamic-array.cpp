@@ -9,7 +9,7 @@ DynamicArray::DynamicArray(void) {
 DynamicArray::~DynamicArray() {
     // Delete array when DynamicArray
     // gets deleted
-    delete array;
+    delete[] array;
 }
 
 void DynamicArray::resize(int new_capacity) {
