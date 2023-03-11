@@ -1,6 +1,7 @@
 #include "dynamic-array/dynamic-array.h"
 #include "two-way-list/two-way-list.h"
 #include "maximum-heap/maximum-heap.h"
+#include "binary-search-tree/binary-search-tree.h"
 #include "iostream"
 
 void dynamic_array_tests(void) {
@@ -51,10 +52,32 @@ void maximum_heap_tests(void) {
     heap->display_as_tree();
 }
 
+void binary_search_tree_tests(void) {
+    BinarySearchTree* bst = new BinarySearchTree();
+
+    bst->add(8);
+    bst->add(3);
+    bst->add(10);
+    bst->add(1);
+    bst->add(6);
+    bst->add(14);
+    bst->add(4);
+    bst->add(7);
+    bst->display();
+
+    std::cout << std::endl;
+
+    bst->remove(6);
+    bst->display();
+
+    delete bst;
+}
+
 int main(void) {
     // dynamic_array_tests();
     // two_way_list_tests();
-    maximum_heap_tests();
+    // maximum_heap_tests();
+    binary_search_tree_tests();
 
     return 0;
 }
