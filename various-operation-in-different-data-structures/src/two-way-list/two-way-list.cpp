@@ -8,7 +8,7 @@ TwoWayList::TwoWayList(void) {
 }
 
 TwoWayList::~TwoWayList() {
-
+    
 }
 
 void TwoWayList::add(int value) {

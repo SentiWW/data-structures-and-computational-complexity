@@ -7,5 +7,5 @@ TwoWayListNode::TwoWayListNode(int value) {
 }
 
 TwoWayListNode::~TwoWayListNode() {
-
+    
 }
