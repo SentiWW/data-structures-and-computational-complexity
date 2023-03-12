@@ -2,6 +2,8 @@
 #include "two-way-list/two-way-list.h"
 #include "maximum-heap/maximum-heap.h"
 #include "binary-search-tree/binary-search-tree.h"
+#include "helpers/random-helper.h"
+#include "helpers/benchmark-helper.h"
 #include "iostream"
 
 void dynamic_array_tests(void) {
@@ -77,7 +79,7 @@ int main(void) {
     // dynamic_array_tests();
     // two_way_list_tests();
     // maximum_heap_tests();
-    binary_search_tree_tests();
+    // binary_search_tree_tests();
 
     return 0;
 }
