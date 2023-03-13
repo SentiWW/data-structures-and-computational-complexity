@@ -21,7 +21,7 @@ add_library(dynamic-array-lib src/dynamic-array/dynamic-array.cpp src/dynamic-ar
 add_library(two-way-list-lib src/two-way-list/two-way-list.cpp src/two-way-list/two-way-list.h src/two-way-list/two-way-list-node.cpp src/two-way-list/two-way-list-node.h)
 add_library(maximum-heap-lib src/maximum-heap/maximum-heap.cpp src/maximum-heap/maximum-heap.h)
 add_library(binary-search-tree-lib src/binary-search-tree/binary-search-tree.cpp src/binary-search-tree/binary-search-tree.h src/binary-search-tree/binary-search-tree-node.cpp src/binary-search-tree/binary-search-tree-node.h)
-add_library(red-black-tree-lib src/red-black-tree/red-black-tree.cpp src/red-black-tree/red-black-tree.h src/red-black-tree/red-black-tree-node.cpp src/red-black-tree/red-black-tree-node.h)
+add_library(red-black-tree-lib src/red-black-tree/red-black-tree.cpp src/red-black-tree/red-black-tree.h src/red-black-tree/red-black-tree-node.cpp src/red-black-tree/red-black-tree-node.h src/red-black-tree/red-black-tree-colors.h)
 add_library(helper-lib src/helpers/random-helper.cpp src/helpers/random-helper.h)
 
 # Add the executable target and link to the library

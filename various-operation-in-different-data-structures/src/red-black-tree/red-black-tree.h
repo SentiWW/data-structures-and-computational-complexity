@@ -8,20 +8,24 @@ class RedBlackTree
 private:
     RedBlackTreeNode* head;
 
-public:
-    RedBlackTree();
-    ~RedBlackTree();
-    RedBlackTreeNode* find(int value);
     RedBlackTreeNode* get_min_node(RedBlackTreeNode* node);
     RedBlackTreeNode* get_max_node(RedBlackTreeNode* node);
     RedBlackTreeNode* get_successor(RedBlackTreeNode* node);
     RedBlackTreeNode* get_predecessor(RedBlackTreeNode* node);
-    void insert(int value);
+    void rotate_left(RedBlackTreeNode* node);
+    void rotate_right(RedBlackTreeNode* node);
+    void fix_insertion(RedBlackTreeNode* node);
+    void fix_deletion(RedBlackTreeNode* node);
+    void transplant(RedBlackTreeNode* u, RedBlackTreeNode* v);
+
+public:
+    RedBlackTree();
+    ~RedBlackTree();
+    void add(int value);
     void remove(int value);
-    bool contains(int value);
-    int size();
+    int* find(int value);
+    void display();
     void clear();
-    void print_tree();
 };
 
 #endif

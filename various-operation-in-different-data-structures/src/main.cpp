@@ -2,8 +2,8 @@
 #include "two-way-list/two-way-list.h"
 #include "maximum-heap/maximum-heap.h"
 #include "binary-search-tree/binary-search-tree.h"
+#include "red-black-tree/red-black-tree.h"
 #include "helpers/random-helper.h"
-#include "helpers/benchmark-helper.h"
 #include "iostream"
 
 void dynamic_array_tests(void) {
@@ -75,11 +75,23 @@ void binary_search_tree_tests(void) {
     delete bst;
 }
 
+void red_black_tree_tests(void) {
+    RedBlackTree* rbt = new RedBlackTree();
+
+    rbt->add(1);
+    rbt->add(2);
+    rbt->add(6);
+    rbt->add(13);
+    rbt->add(3);
+    rbt->display();
+}
+
 int main(void) {
     // dynamic_array_tests();
     // two_way_list_tests();
     // maximum_heap_tests();
     // binary_search_tree_tests();
+    red_black_tree_tests();
 
     return 0;
 }
